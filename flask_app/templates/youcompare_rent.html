@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <title>YouCompare Rent | Youni</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <span>Youni</span>
+        </div>
+        <nav class="nav-masthead">
+            <a class="nav-link" href="/">About</a>
+            <a class="nav-link" href="/youcompare_rent">Rent</a>
+            <a class="nav-link" href="/youcompare_convenience">Convenience</a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <h1>YouCompare Rent Rating</h1>
+        <div id="map-container">
+            {{ map_html | safe }}
+        </div>
+    </div>
+</body>
+</html>
